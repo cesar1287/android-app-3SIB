@@ -3,4 +3,8 @@
     <string name="hello_world">Hello World!</string>
     <string name="random">Random</string>
     <string name="random_label">Clique no botão para sortear</string>
+    <string name="hint_your_name">Digite seu nome</string>
+    <string name="hint_your_email">Digite seu e-mail</string>
+    <string name="hint_your_password">Digite sua senha</string>
+    <string name="button_continue">Continue</string>
 </resources>
