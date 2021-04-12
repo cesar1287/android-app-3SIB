@@ -29,10 +29,19 @@ class RegisterActivity : AppCompatActivity() {
                     tilRegisterName.isErrorEnabled = false
                 }
 
+
+                val intent = Intent(
+                    this@RegisterActivity,
+                    MainActivity::class.java
+                )
+                intent.putExtra(KEY_INTENT_NAME, name)
+                intent.putExtra(KEY_INTENT_EMAIL, email)
+                intent.putExtra(KEY_INTENT_PASSWORD, password)
+                intent.putExtra(KEY_INTENT_DOUBLE, 10.5)
+                intent.putExtra(KEY_INTENT_AGE, 26)
+
                 startActivity(
-                    Intent(
-                        this@RegisterActivity,
-                        MainActivity::class.java)
+                    intent
                 )
             }
         }
@@ -61,5 +70,13 @@ class RegisterActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.i("lifecycle", "onDestroy - Register")
+    }
+
+    companion object {
+        const val KEY_INTENT_NAME = "name"
+        const val KEY_INTENT_EMAIL = "email"
+        const val KEY_INTENT_PASSWORD = "password"
+        const val KEY_INTENT_DOUBLE = "double"
+        const val KEY_INTENT_AGE = "age"
     }
 }
