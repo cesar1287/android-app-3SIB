@@ -34,11 +34,22 @@ class RegisterActivity : AppCompatActivity() {
                     this@RegisterActivity,
                     MainActivity::class.java
                 )
-                intent.putExtra(KEY_INTENT_NAME, name)
-                intent.putExtra(KEY_INTENT_EMAIL, email)
-                intent.putExtra(KEY_INTENT_PASSWORD, password)
-                intent.putExtra(KEY_INTENT_DOUBLE, 10.5)
-                intent.putExtra(KEY_INTENT_AGE, 26)
+                val user = User(
+                    age = 26,
+                    password = password,
+                    name = name,
+                    email = email
+                )
+                intent.putExtra(KEY_INTENT_USER, user)
+
+                //Register - user - 4 atributos
+                //"name" -> name
+                //"email" -> email
+
+                //Intent
+
+                //Main - user - 4 atributos
+                //User(name, email, etc)
 
                 startActivity(
                     intent
@@ -73,10 +84,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val KEY_INTENT_NAME = "name"
-        const val KEY_INTENT_EMAIL = "email"
-        const val KEY_INTENT_PASSWORD = "password"
-        const val KEY_INTENT_DOUBLE = "double"
-        const val KEY_INTENT_AGE = "age"
+        const val KEY_INTENT_USER = "user"
     }
 }
