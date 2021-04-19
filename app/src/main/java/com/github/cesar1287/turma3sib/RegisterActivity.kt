@@ -24,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
                 val password = tieRegisterPassword.text.toString()
 
                 if (name.isBlank()) {
-                    tilRegisterName.error = "Campo nome vazio ou inválido"
+                    tilRegisterName.error = getString(R.string.error_empty_field)
                 } else {
                     tilRegisterName.isErrorEnabled = false
                 }
@@ -51,9 +51,9 @@ class RegisterActivity : AppCompatActivity() {
                 //Main - user - 4 atributos
                 //User(name, email, etc)
 
-                startActivity(
-                    intent
-                )
+//                startActivity(
+//                    intent
+//                )
             }
         }
     }

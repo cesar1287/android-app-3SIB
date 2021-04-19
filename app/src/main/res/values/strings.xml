@@ -10,4 +10,5 @@
     <string name="already_have_account">Já tenho uma conta</string>
     <string name="register_button_login">Entrar</string>
     <string name="sorted_number">O número %2$s - %1$d</string>
+    <string name="error_empty_field">Campo nome vazio ou inválido</string>
 </resources>
