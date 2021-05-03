@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Class 3SIB</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="random">Random</string>
+    <string name="random_label">Click in the button</string>
+    <string name="hint_your_name">Your name</string>
+    <string name="hint_your_email">Your e-mail</string>
+    <string name="hint_your_password">Your password</string>
+    <string name="button_continue">Continue</string>
+    <string name="already_have_account">Already have an account</string>
+    <string name="register_button_login">Login</string>
+    <string name="sorted_number">The number %2$s - %1$d</string>
+    <string name="error_empty_field">Name field empty or invalid</string>
+</resources>
