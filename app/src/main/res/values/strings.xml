@@ -13,4 +13,7 @@
     <string name="error_empty_field">Campo nome vazio ou inválido</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_your_weight">Seu peso em Kg (Ex. 80Kg)</string>
+    <string name="hint_your_height">Sua altura em cm (Ex. 180cm)</string>
+    <string name="calculate">Calcular</string>
 </resources>

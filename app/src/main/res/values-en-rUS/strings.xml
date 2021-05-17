@@ -12,4 +12,6 @@
     <string name="register_button_login">Login</string>
     <string name="sorted_number">The number %2$s - %1$d</string>
     <string name="error_empty_field">Name field empty or invalid</string>
+    <string name="hint_your_weight">Seu peso em Kg (Ex. 80Kg)</string>
+    <string name="hint_your_height">Sua altura em cm (Ex. 180cm)</string>
 </resources>
