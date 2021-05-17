@@ -1,6 +1,5 @@
 package com.github.cesar1287.turma3sib
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,46 +15,14 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         Log.i("lifecycle", "onCreate - Register")
+        //Register - user - 4 atributos
+        //"name" -> name
+        //"email" -> email
 
-        with(binding) {
-            btRegisterSave.setOnClickListener {
-                val name = tieRegisterName.text.toString()
-                val email = tieRegisterEmail.text.toString()
-                val password = tieRegisterPassword.text.toString()
+        //Intent
 
-                if (name.isBlank()) {
-                    tilRegisterName.error = getString(R.string.error_empty_field)
-                } else {
-                    tilRegisterName.isErrorEnabled = false
-                }
-
-
-                val intent = Intent(
-                    this@RegisterActivity,
-                    MainActivity::class.java
-                )
-                val user = User(
-                    age = 26,
-                    password = password,
-                    name = name,
-                    email = email
-                )
-                intent.putExtra(KEY_INTENT_USER, user)
-
-                //Register - user - 4 atributos
-                //"name" -> name
-                //"email" -> email
-
-                //Intent
-
-                //Main - user - 4 atributos
-                //User(name, email, etc)
-
-//                startActivity(
-//                    intent
-//                )
-            }
-        }
+        //Main - user - 4 atributos
+        //User(name, email, etc)
     }
 
     override fun onStart() {
@@ -81,9 +48,5 @@ class RegisterActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.i("lifecycle", "onDestroy - Register")
-    }
-
-    companion object {
-        const val KEY_INTENT_USER = "user"
     }
 }
